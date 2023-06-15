@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import PostList from '@/components/postList/PostList'
+import EventExample from './3-event-example/page'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    // <main className={styles.main}>
+      /* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <code className={styles.code}></code>
         </p>
         <div>
           <a
@@ -26,9 +28,14 @@ export default function Home() {
             />
           </a>
         </div>
+      </div> */
+      <div>
+        {/* <PostList></PostList> */}
+        <EventExample />
+        
       </div>
 
-      <div className={styles.center}>
+      /* <div className={styles.center}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -89,7 +96,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
+      // </div> */
+    /* </main> */
   )
 }
